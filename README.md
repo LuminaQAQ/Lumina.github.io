@@ -1,2 +1,2 @@
 # Lumina.github.io
-Blog_jq
+https://luminaqaq.github.io/Lumina.github.io/index.html
