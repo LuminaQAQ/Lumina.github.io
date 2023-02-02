@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>music</title>
+	<link rel="stylesheet" href="../css/music.css">
+	<link rel="stylesheet" href="../css/music-phone.css">
+	<script src="../js/bootstrap/js/jquery-3.6.0.min.js"></script>
+	<script src="../js/bootstrap/js/jquery.color-git.js"></script>
+	<script src="../js/music.js"></script>
+</head>
+
+<body>
+	<!-- 音乐 -->
+	<div class="audio">
+		<div class="music"></div>
+		<div class="music-img">
+			<img class="music-imgs" src="../source/img/index/normal.jpg">
+			<div class="pause"></div>
+			<div class="play" style="display: none;"></div>
+			<audio class="maudio"></audio>
+			<audio class="maudio"></audio>
+			<audio class="maudio"></audio>
+			<audio class="maudio"></audio>
+			<audio class="maudio"></audio>
+			<audio class="maudio"></audio>
+			<audio class="maudio"></audio>
+			<audio class="maudio"></audio>
+			<audio class="maudio"></audio>
+			<audio class="maudio"></audio>
+		</div>
+	</div>
+	<!-- 音乐 结束 -->
+
+	<!-- 切换 -->
+	<div class="setting-bar">
+		<div class="trans_bg">
+			<img src="../source/img/index/setting.png">
+			<ul>
+				<li>
+					<span class="blue"></span>
+					<span class="black"></span>
+					<span class="green"></span>
+				</li>
+				<li>
+					<span class="white"></span>
+					<span class="yellow"></span>
+					<span class="pink"></span>
+				</li>
+			</ul>
+		</div>
+		<div class="toTop_bg">
+			<img src="../source/img/index/toTop.png">
+		</div>
+	</div>
+
+	<!-- 这是页面 -->
+	<div id="main">
+		<div id="page-top">
+			<!-- 导航栏 -->
+			<div class="nav-wrap">
+				<nav>
+					<h3>Lumina の Blog</h3>
+					<ul class="vice-nav">
+						<li>
+							<span><a href="../index.html" style="color: white;">首页</a></span>
+							<ul class="vice-nav-list"></ul>
+						</li>
+						<li>
+							<span>归档</span>
+							<ul class="vice-nav-list">
+								<li><a href="./music.html">音乐</a></li>
+								<li><a href="./アニメ.html">番剧</a></li>
+								<li><a href="./game-index.html">游戏</a></li>
+							</ul>
+						</li>
+						<li>
+							<span>留言板</span>
+							<ul class="vice-nav-list"></ul>
+						</li>
+						<li>
+							<span>时间轴</span>
+							<ul class="vice-nav-list"></ul>
+						</li>
+						<li>
+							<span>关于</span>
+							<ul class="vice-nav-list"></ul>
+						</li>
+					</ul>
+					<div class="search">
+						<form class="search" method="get">
+							<label for="search"></label>
+							<input type="text" name="search" id="search" placeholder="搜索....">
+							<span class="info-clear">x</span>
+							<div class="search-wrap">
+								<ul>
+									<li>1</li>
+									<li>1</li>
+									<li>1</li>
+								</ul>
+							</div>
+						</form>
+					</div>
+				</nav>
+			</div>
+			<!-- 导航栏 结束 -->
+		</div>
+
+		<!-- 中间: 内容 左+右 -->
+		<div id="page-center">
+			<div class="page-wrap">
+				<!-- 左 -->
+				<div class="page-left">
+
+					<!-- 公告栏 -->
+					<div class="single-atc bulletin" id="bulletin">
+						<div class="bulletin-imgs">
+							<ul>
+								<li><img src="../source/img/music专页_分栏/2/Concentric Circles - Yichen.jpg"></li>
+								<li><img src="../source/img/music专页_分栏/1/Eternal Layer - Wisp X.png"></li>
+								<li><img src="../source/img/music专页_分栏/2/Ring - Chandelier XIII.jpg"></li>
+								<li><img src="../source/img/music专页_分栏/1/Final Step! - Kankitsu.jpg"></li>
+							</ul>
+						</div>
+					</div>
+					<!-- 公告栏 结束 -->
+
+					<!-- 歌单 -->
+					<div class="feature left">
+						<div class="feature-row">
+							<div class="single-feature">
+								<div class="feature-img">
+									<img src="../source/img/music专页_分栏/歌单/cytus.jpg">
+								</div>
+								<div class="txt">
+									<h4>音乐世界 Cytus II</h4>
+								</div>
+							</div>
+							<div class="single-feature">
+								<div class="feature-img">
+									<img src="../source/img/music专页_分栏/歌单/phigros.jpg">
+								</div>
+								<div class="txt">
+									<h4>「Phigros」官方OST</h4>
+								</div>
+							</div>
+							<div class="single-feature">
+								<div class="feature-img">
+									<img src="../source/img/music专页_分栏/歌单/Muse.jpg">
+								</div>
+								<div class="txt">
+									<h4>Muse Dash (实际数量277)</h4>
+								</div>
+							</div>
+							<div class="single-feature">
+								<div class="feature-img">
+									<img src="../source/img/music专页_分栏/歌单/VOEZ.jpg">
+								</div>
+								<div class="txt">
+									<h4>【兰空VOEZ】经典的游戏音乐</h4>
+								</div>
+							</div>
+							<div class="single-feature">
+								<div class="feature-img">
+									<img src="../source/img/music专页_分栏/歌单/Arc.jpg">
+								</div>
+								<div class="txt">
+									<h4>「Arcaea」</h4>
+								</div>
+							</div>
+							<div class="single-feature">
+								<div class="feature-img">
+									<img src="../source/img/music专页_分栏/歌单/长串名.jpg">
+								</div>
+								<div class="txt">
+									<h4>星空迷上山野：有梦，有光，也有归人</h4>
+								</div>
+							</div>
+						</div>
+						<div class="feature-row">
+						</div>
+					</div>
+					<div class="clear"></div>
+					<!-- 歌单 结束 -->
+
+					<!-- 音乐排行 -->
+
+					<!-- 周排行 -->
+					<div class="music-wrap" id="week">
+						<div class="ani-imgs">
+							<div class="music-ahead">
+								<div class="music-ahead-img1">
+									<img src="../source/img/小组件/排行-爱心.svg">
+								</div>
+								<h3>周排行</h3>
+							</div>
+							<div class="music-menu1">
+								<p>
+									<span>1.</span>
+									<a>未梦</a>
+								</p>
+								<p>
+									<span>2.</span>
+									<a>My Soul,Your Beats! (Instrumental)</a>
+								</p>
+								<p>
+									<span>3.</span>
+									<a>with all my heart</a>
+								</p>
+								<p>
+									<span>4.</span>
+									<a>远枫 Acoustic</a>
+								</p>
+								<p>
+									<span>5.</span>
+									<a>Cytus II Opening - The Whole Rest</a>
+								</p>
+								<p>
+									<span>6.</span>
+									<a>Aphasia</a>
+								</p>
+								<p>
+									<span>7.</span>
+									<a>Eternal Layer</a>
+								</p>
+								<p>
+									<span>8.</span>
+									<a>Phigros Ending (Extended)</a>
+								</p>
+								<p>
+									<span>9.</span>
+									<a>Stasis</a>
+								</p>
+								<p>
+									<span>10.</span>
+									<a>Wings of Liberty</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- 周排行 -->
+
+					<!-- 总排行 -->
+					<div class="music-wrap" id="altogether">
+						<div class="ani-imgs">
+							<div class="music-ahead">
+								<div class="music-ahead-img2">
+									<img src="../source/img/小组件/排行-爱心.svg">
+								</div>
+								<h3>总排行</h3>
+							</div>
+							<div class="music-menu2">
+								<p>
+									<span>1.</span>
+									<a>Chandelier XIII</a>
+								</p>
+								<p>
+									<span>2.</span>
+									<a>Concentric Circles</a>
+								</p>
+								<p>
+									<span>3.</span>
+									<a>Forever</a>
+								</p>
+								<p>
+									<span>4.</span>
+									<a>Temple of Time (Wisp X Remix)</a>
+								</p>
+								<p>
+									<span>5.</span>
+									<a>ハルノヒ (春日)</a>
+								</p>
+								<p>
+									<span>6.</span>
+									<a>日陰と帽子と風鈴と</a>
+								</p>
+								<p>
+									<span>7.</span>
+									<a>Terminal Illness</a>
+								</p>
+								<p>
+									<span>8.</span>
+									<a>反复折断的光线</a>
+								</p>
+								<p>
+									<span>9.</span>
+									<a>Last</a>
+								</p>
+								<p>
+									<span>10.</span>
+									<a>Still</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- 总排行 结束 -->
+
+					<!-- 音乐排行 结束 -->
+				</div>
+				<!-- 左 结束 -->
+			</div>
+		</div>
+		<div class="clear"></div>
+		<!-- 中间: 内容 左+右 结束-->
+
+		<!-- 页脚: 就只有页脚,没啥 -->
+		<footer id="page-bottom">
+			<div class="footer-wrap">
+				<p>©2202-2022 By Lumina</p>
+				<p>暂时空缺,此行勿删</p>
+			</div>
+		</footer>
+		<!-- 页脚: 就只有页脚,没啥 结束 -->
+	</div>
+	<!-- 这是页面 结束 -->
+
+</body>
+
+</html>

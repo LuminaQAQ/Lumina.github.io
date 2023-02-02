@@ -1,0 +1,684 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background-image: url("../source/img/index/firstview.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+::-webkit-scrollbar {
+    width: .5em;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.679);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.324);
+    border-radius: 10px;
+}
+
+/* 音乐 */
+.audio {
+    position: fixed;
+    z-index: 998;
+    bottom: 0;
+}
+
+.music {
+    position: relative;
+    width: .8em;
+    height: 4em;
+    background-color: rgb(237, 237, 237);
+    border-radius: 0 10px 10px 0;
+}
+
+.music::after {
+    content: '';
+    display: inline-block;
+    position: relative;
+    border: 2em solid transparent;
+    border-left: 2em solid rgba(128, 128, 128, 0.576);
+    left: -1.1em;
+}
+
+.music-img {
+    position: fixed;
+    z-index: 10;
+    width: 4em;
+    height: 4em;
+    background-color: rgb(255, 255, 255);
+    bottom: 0;
+    left: -4em;
+    background-image: url('../source/img/index/normal.jpg');
+    background-size: cover;
+    /* display: none; */
+}
+
+.music:hover+.music-img {
+    display: block;
+}
+
+.pause,
+.play {
+    width: 2em;
+    height: 2em;
+    border: 1px solid #fff;
+    position: absolute;
+    border-radius: 50%;
+    left: 1em;
+    top: 1em;
+}
+
+.pause::after,
+.play::after {
+    content: '';
+    display: inline-block;
+    position: relative;
+}
+
+.pause::after {
+    border: .7em solid transparent;
+    border-left: 1em solid rgba(255, 255, 255, 0.5);
+    left: .6em;
+    top: .3em;
+}
+
+.play::after {
+    width: .5em;
+    height: .5em;
+    background-image: linear-gradient(to left, transparent 50%, rgba(255, 255, 255, 0.5) 50%), linear-gradient(to bottom, transparent 50%, rgba(255, 255, 255, 0) 50%);
+    background-size: 5px 5px;
+    background-position: 15% 50%;
+    top: -.3em;
+    left: .245em;
+}
+
+/* .music:hover,.music:focus {    left: 4em;} */
+/* 音乐 结束 */
+/* 日间/夜间切换 */
+.transform {
+    position: fixed;
+    bottom: 16em;
+    right: 0;
+    width: 2em;
+    height: 2em;
+    padding: 1em;
+    z-index: 999;
+    border-radius: 50%;
+}
+
+.transform img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* 日间/夜间切换 结束 */
+/* 顶部 */
+
+
+/* 导航栏 */
+.nav-wrap {
+    background-image:
+        linear-gradient(to bottom,
+            rgba(27, 29, 33, .3),
+            rgba(6, 20, 50, .3)),
+        linear-gradient(135deg,
+            rgba(27, 29, 33, .3),
+            rgba(8, 25, 60, .3)),
+        linear-gradient(45deg,
+            rgba(27, 29, 33, .3),
+            rgba(8, 25, 60, .3));
+}
+
+nav,
+header {
+    margin: 0 1rem;
+}
+
+nav {
+    margin: 0;
+    position: relative;
+    height: 4.0625rem;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    background-image:
+        linear-gradient(to bottom,
+            rgba(27, 29, 33, .3),
+            rgba(6, 20, 50, .3)),
+        linear-gradient(135deg,
+            rgba(27, 29, 33, .3),
+            rgba(8, 25, 60, .3)),
+        linear-gradient(45deg,
+            rgba(27, 29, 33, .3),
+            rgba(8, 25, 60, .3));
+}
+
+nav h3 {
+    margin: 0 auto;
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: center;
+}
+
+/* 副导航 */
+.vice-nav {
+    font-size: .9rem;
+    height: 2.5rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    flex: 2 0 auto;
+
+    list-style: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.vice-nav li {
+    width: 2.75rem;
+    padding: 1.5rem 1.25rem;
+    color: #ffffffdb;
+    position: relative;
+}
+
+.vice-nav li:hover {
+    background-color: #606163;
+}
+
+.vice-nav-list {
+    position: absolute;
+    top: 4.2rem;
+    left: 0;
+    z-index: 998;
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
+    display: none;
+    box-shadow: 0 0 5px #000000;
+
+    list-style: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.vice-nav-list li {
+    text-align: center;
+    margin: 0;
+    border-radius: 0;
+    transition: all .7s;
+    cursor: pointer;
+    background-color: #7dc2fbda;
+}
+
+.vice-nav-list li:hover {
+    transition: all .7s;
+    color: #000000;
+    background-color: rgb(166, 214, 253);
+}
+
+.vice-nav a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+.search {
+    position: relative;
+    vertical-align: middle;
+    flex: 1 0 auto;
+}
+
+.search input {
+    position: relative;
+    vertical-align: middle;
+    border-radius: 5px;
+    background-color: #32363D;
+    border: 0;
+    height: 2rem;
+}
+
+.search input:focus {
+    outline: 1px solid #2daae9;
+}
+
+.search::after {
+    content: '';
+    position: relative;
+    display: block;
+    clear: both;
+}
+
+.search-wrap {
+    position: absolute;
+    width: 10rem;
+    z-index: 999;
+    display: none;
+    background-image: linear-gradient(to bottom,
+            rgba(27, 29, 33, .3),
+            rgba(6, 20, 50, .3)),
+        linear-gradient(135deg,
+            rgba(27, 29, 33, .3),
+            rgba(8, 25, 60, .3)),
+        linear-gradient(45deg,
+            rgba(27, 29, 33, .3),
+            rgba(8, 25, 60, .3));
+    max-height: 15rem;
+    width: 10.5rem;
+}
+
+.search-wrap ul {
+    list-style: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+
+    box-sizing: border-box;
+    max-height: 15rem;
+    width: 10.5rem;
+}
+
+.search-wrap li {
+    width: 100%;
+    padding: .5rem 1rem;
+    height: 2.5rem;
+    width: 10.5rem;
+    box-sizing: border-box;
+}
+
+.info-clear {
+    position: absolute;
+    top: .1875rem;
+    left: 9.3125rem;
+    display: none;
+}
+
+/* 导航栏 结束 */
+
+/* 导航栏 结束 */
+.banner-wrap {
+    position: relative;
+    margin: 0 auto;
+    top: 35%;
+    max-width: 800px;
+    padding: 0 10px;
+    text-align: center;
+    z-index: 2;
+}
+
+/* 头图 */
+.firstview {
+    background-image: url(../source/img/music专页_分栏/bg/图4.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 25em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.banner-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 1em;
+    text-align: center;
+    z-index: 2;
+}
+
+.ban-yiyan {
+    background-color: rgba(0, 0, 0, 0.418);
+    border-radius: 15px;
+    text-align: center;
+    padding: .5em;
+    font-size: 1.5em;
+    color: lightgray;
+    font-family: '华文行楷';
+}
+
+/* 头图 结束 */
+/* 顶部 结束 */
+/* 中间内容: 左+右 */
+.pagebg {
+    /* 背景板 */
+    background-image: linear-gradient(to right bottom, rgb(100, 253, 228) 30%, rgb(19, 235, 145) 60%, rgba(240, 243, 182));
+    box-shadow: 0 0 4px rgb(0 0 0 / 25%);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+}
+
+.page-left {
+    width: 100%;
+}
+
+.page-wrap {
+    /* 盒子样式 */
+    max-width: 76em;
+    margin: 0 auto;
+    display: flex;
+    height: 100%;
+}
+
+.single-atc {
+    /* 每个容器的统一样式 */
+    box-sizing: border-box;
+    margin: 1em;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 1em;
+    transition: all .3s;
+}
+
+.single-atc:hover,
+.single-feature:hover {
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+    transition: all .3s;
+    outline: solid rgba(255, 255, 255, 0.1);
+}
+
+/* 左边: pageleft */
+.left {
+    height: auto;
+}
+
+.txt {
+    /* 文字背景板 */
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+.txt,
+.single-atc {
+    overflow: auto;
+}
+
+/* 公告栏 */
+/* 公告栏 结束 */
+/* 话题 tags */
+/* 话题 tags 结束 */
+/* 图片组 伪图片轮播(?)(笑 */
+/* 图片组 结束 */
+/* 阅读排行前四的文章 */
+.feature {
+    max-width: 70em;
+    margin: 3em auto;
+    box-sizing: border-box;
+    animation: main 1s;
+    transition: all .3s;
+}
+
+.single-feature {
+    max-width: 22%;
+    flex: 0 0 22%;
+    margin: .5em 1em;
+    transition: .5s;
+}
+
+.item-wrap img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.feature-row {
+    display: flex;
+    /* margin: 0 -10px -20px; */
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.item-wrap,
+.txt {
+    height: 120%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, .5);
+}
+
+.txt {
+    padding-bottom: 0;
+    transform: translateY(70%);
+    transition: transform 1s;
+}
+
+.item-wrap:hover .txt {
+    transform: translateY(0);
+}
+
+.item-wrap {
+    height: 0;
+    color: #fff;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    padding-bottom: 133%;
+}
+
+.txt h4 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: .3em;
+    height: 1.5em;
+}
+
+.txt-info {
+    height: 65%;
+    white-space: normal;
+    display: block;
+    font-weight: 700;
+}
+
+/* 阅读排行前四的文章 结束 */
+/* 横条文章 */
+/* 横条文章 结束 */
+/* 换页 */
+/* 左边: pageleft 结束*/
+/* 右边: page-right */
+.right img {
+    position: relative;
+    object-fit: cover;
+    margin: 1em auto;
+    border-radius: 50%;
+}
+
+.right table {
+    text-align: center;
+    table-layout: fixed;
+    padding: 1em 0;
+}
+
+.right td,
+.right th {
+    font-size: 1.25em;
+}
+
+.right caption {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+/* 右边: page-right  结束*/
+/* 页脚 */
+.footer-wrap {
+    position: relative;
+    padding: 30px;
+    background-image: linear-gradient(to left bottom, rgba(182, 186, 243, 0.3), rgba(19, 177, 235, 0.3), rgba(100, 169, 253, 0.3));
+    text-align: center;
+}
+
+.pagebg-night {
+    /* 夜间模式背景板 */
+    background-image: url(../source/background-night.png);
+    background-color: rgb(37, 37, 37);
+    box-shadow: 0 0 4px rgb(0 0 0 / 25%);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-wrap-night {
+    position: relative;
+    padding: 30px;
+    padding-top: 7em;
+    margin-top: 2em;
+    background-image: url(../source/footer-night.png);
+    text-align: center;
+}
+
+.label-wrap {
+    display: inline-block;
+}
+
+.single-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+    float: left;
+    background-image: linear-gradient(to bottom, rgba(37, 36, 36, 1), rgba(110, 108, 108, 1), rgba(48, 47, 47, 1));
+    color: #cdcdcd;
+    padding: 0 .5em;
+    border-radius: 1em;
+    font-size: .75em;
+}
+
+.single-label:nth-child(even) {
+    background-image: linear-gradient(to bottom, rgb(0, 187, 255), rgb(152, 224, 248), rgb(0, 187, 255));
+    color: #484747;
+}
+
+.label-info {
+    padding: 0 1em;
+}
+
+
+/* 切换 */
+.trans_bg,
+.toTop_bg {
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    z-index: 999;
+    bottom: 2rem;
+    right: -2rem;
+}
+
+.toTop_bg {
+    bottom: 5rem;
+    right: -1.9rem;
+}
+
+.trans_bg img,
+.toTop_bg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.trans_bg ul {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: -7.7rem;
+    top: -5rem;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 8px;
+    display: none;
+
+    list-style: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+
+.trans_bg ul::after {
+    content: '';
+    display: block;
+    position: relative;
+    border: .5rem solid transparent;
+    border-left: .5rem solid rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    left: 7rem;
+    top: -1.5rem;
+}
+
+.trans_bg ul li {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.trans_bg ul li>span {
+    flex: 1 0 auto;
+    margin: .5rem .5rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+.blue {
+    background-color: rgb(100, 190, 252);
+}
+
+.black {
+    background-color: rgb(42, 42, 42);
+}
+
+.green {
+    background-color: rgb(90, 199, 129);
+}
+
+.white {
+    background-color: rgb(233, 233, 233);
+}
+
+.white {
+    background-color: rgb(233, 233, 233);
+}
+
+.yellow {
+    background-color: rgb(248, 208, 130);
+}
+
+.pink {
+    background-color: rgb(250, 156, 192);
+}
+
+/* 页脚 结束 */

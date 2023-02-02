@@ -1,0 +1,375 @@
+@media screen and (max-width: 28em) {
+
+    /* 移动端 */
+    #page-main {
+        background-image: url(../img/760px.png);
+    }
+
+    .navbar .menu {
+        display: none;
+    }
+
+    .navbar span {
+        display: flex;
+        float: left;
+    }
+
+    .nav-wrap>span:first-child {
+        width: 86% !important;
+    }
+
+    .smenu {
+        /* 三明治 */
+        width: 10px;
+        height: 10px;
+        background-image:
+            linear-gradient(to bottom,
+                transparent,
+                transparent 50%,
+                rgba(205, 203, 203, 0.5) 50%);
+        background-size: 11px 11px;
+        background-position: 50% 35%;
+    }
+
+    .firstview figure {
+        /* Phone full */
+        background-image: url(../img/760px.png) !important;
+        height: 200vw !important;
+    }
+
+    .firstview {
+        /* Phone full */
+        background-image: url(../img/760px.png) !important;
+        height: 200vw !important;
+    }
+
+    .single-label {
+        float: none !important;
+        margin: 1em 0;
+    }
+
+    .list {
+        display: none !important;
+    }
+
+    .page-grap {
+        /* 间隙 */
+        width: 0;
+    }
+
+
+    .pagebg video {
+        height: 225vw !important;
+        position: fixed;
+        left: -70%;
+    }
+
+
+    /* 公告栏 */
+    .bulletin-yiyan .ban-yiyan {
+        margin: 1em .3em 0 !important;
+    }
+
+    .bulletin {
+        height: 10em !important;
+        margin: 0 !important;
+        padding: 0 0 1em 0 !important;
+    }
+
+    .bulletin .txt span {
+        text-indent: 0 !important;
+    }
+
+    .bulletin .fig {
+        width: 97% !important;
+        height: 100% !important;
+        margin: 2% !important;
+    }
+
+    /* 公告栏 */
+
+
+
+    .single-atc:hover {
+        outline-width: 10px !important;
+        transition: all .5s !important;
+        outline: rgba(0, 0, 0, 0.1) solid;
+    }
+
+    /* 三明治 */
+    .sidebar-wrap {
+        margin: 0;
+        padding: 0;
+        display: none;
+        transition: all .3s;
+        position: fixed;
+        z-index: 999;
+    }
+
+    .sidebar {
+        position: fixed;
+        height: 100%;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        overflow-y: scroll !important;
+        z-index: 999 !important;
+    }
+
+    .sidebar-shadow {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 800;
+    }
+
+    .sidebar .single-atc,
+    .sidebar .right,
+    .sidebar .single-atc:hover {
+        margin: 0 !important;
+        border: 0 !important;
+        border-radius: 0;
+        box-shadow: none;
+        outline: 0;
+        position: fixed;
+        height: 100%;
+        overflow-y: scroll;
+    }
+
+    .sidebar-menu p {
+        padding: .5em 2em;
+    }
+
+    .sidebar-menu a,
+    .sidebar-menu a:active {
+        text-decoration: none;
+        color: black;
+    }
+
+    .sidebar-menu li {
+        padding: .5em 3.5em;
+    }
+
+    .menu-list-wrap {
+        height: 100%;
+    }
+
+    .sidebar-wrap {
+        display: none;
+    }
+
+    .menu-list::after {
+        content: '';
+        display: inline-block;
+        position: relative;
+        border: 1em solid transparent;
+        border-top: 1em solid rgba(128, 128, 128, 0.576);
+        left: 1em;
+        bottom: -1.2em;
+    }
+
+    /* 三明治 结束 */
+}
+
+@media screen and (max-width:60em) {
+    .page-left {
+        width: 100% !important;
+    }
+
+    .left {
+        height: auto !important;
+    }
+
+    .page-wrap {
+        display: block !important;
+    }
+
+    .page-right {
+        width: 100% !important;
+    }
+
+    /* 每个文章 */
+    .single-atc,
+    .single-atc:nth-child(even) {
+        margin: .5em !important;
+        padding: 0 0 1em 0;
+    }
+
+    .fig {
+        float: none !important;
+        width: 100% !important;
+        height: 230px !important;
+    }
+
+    .txt {
+        padding: 0 1em;
+        margin: 0 !important;
+    }
+
+    .txt span,
+    .txt p {
+        display: -webkit-box;
+        -webkit-line-clamp: 5 !important;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        font-size: 0.9em;
+        text-indent: 2em;
+    }
+
+    .txt h2 {
+        text-align: left !important;
+    }
+
+    /* 每个文章 结束 */
+
+    .list {
+        height: 100% !important;
+    }
+
+    /* 公告栏 */
+    .bulletin {
+        margin: 0;
+        padding: 0;
+        overflow: hidden !important;
+    }
+
+    .bulletin .fig {
+        width: 30% !important;
+        height: 50%;
+        margin: 2%;
+    }
+
+    .bulletin .fig {
+        height: 100%;
+    }
+
+    /* 公告栏 结束 */
+
+    .sidebar-wrap {
+        display: none;
+    }
+}
+
+@media screen and (max-width:60em) {
+    .page-left {
+        width: 100% !important;
+    }
+
+    .left {
+        height: auto !important;
+    }
+
+    .page-wrap {
+        display: block !important;
+    }
+
+    .page-right {
+        width: 100% !important;
+    }
+
+    /* 每个文章 */
+    .single-atc,
+    .single-atc:nth-child(even) {
+        margin: .5em !important;
+        padding: 0 0 1em 0;
+    }
+
+    .fig {
+        float: none !important;
+        width: 100% !important;
+        height: 230px !important;
+    }
+
+    .txt {
+        padding: 0 1em;
+        margin: 0 !important;
+    }
+
+    .txt span,
+    .txt p {
+        display: -webkit-box;
+        -webkit-line-clamp: 5 !important;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        font-size: 0.9em;
+        text-indent: 2em;
+    }
+
+    .txt h2 {
+        text-align: left !important;
+    }
+
+    /* 每个文章 结束 */
+
+    .list {
+        height: 100% !important;
+    }
+
+    /* 公告栏 */
+    .bulletin {
+        margin: 0;
+        padding: 0;
+        overflow: hidden !important;
+    }
+
+    .bulletin .fig {
+        width: 30% !important;
+        height: 50%;
+        margin: 2%;
+    }
+
+    .bulletin .fig {
+        height: 100%;
+    }
+
+    /* 公告栏 结束 */
+
+    .sidebar-wrap {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width:63em) {
+    .firstview figure {
+        /* pc full */
+        height: 55vw !important;
+    }
+
+    .firstview {
+        /* pc full */
+        height: 55vw !important;
+    }
+
+    .list {
+        margin: auto .3em;
+        height: 100%;
+    }
+
+    .sidebar-wrap {
+        display: none !important;
+    }
+
+    .pagebg video {
+        /* 背景板 */
+        height: 100vw !important;
+    }
+}
+
+@media screen and (max-width:52em) and (min-width:32em) {
+    .pagebg video {
+        /* 背景板 */
+        height: 150vw !important;
+        position: fixed;
+        left: -30%;
+    }
+
+    .bulletin {
+        height: 16em;
+    }
+
+    .sidebar-wrap {
+        display: none;
+    }
+}
