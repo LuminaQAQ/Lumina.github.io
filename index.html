@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lumina の Blog</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<script src="./js/bootstrap/js/jquery-3.6.0.min.js"></script>
+	<script src="./js/bootstrap/js/jquery.color-git.js"></script>
+	<link rel="stylesheet" href="./css/index.css">
+	<script src="./js/index.js"></script>
+</head>
+
+<body>
+	<!-- 切换 -->
+	<div class="setting-bar">
+		<div class="trans_bg">
+			<img src="./source/img/index/setting.png">
+			<ul>
+				<li>
+					<span class="blue"></span>
+					<span class="black"></span>
+					<span class="green"></span>
+				</li>
+				<li>
+					<span class="white"></span>
+					<span class="yellow"></span>
+					<span class="pink"></span>
+				</li>
+			</ul>
+		</div>
+		<div class="toTop_bg">
+			<img src="./source/img/index/toTop.png">
+		</div>
+	</div>
+
+	<!-- 音乐 -->
+	<div class="audio">
+		<div class="music"></div>
+		<div class="music-img">
+			<div class="pause"></div>
+			<div class="play" style="display: none;"></div>
+			<audio class="maudio" src="./source/medium/未梦 - himmel.mp3" loop></audio>
+		</div>
+	</div>
+	<!-- 音乐 结束 -->
+
+	<!-- 这是页面 -->
+	<div id="main">
+		<!-- 顶部: 包括头图和导航栏 -->
+		<div id="page-top">
+			<!-- 导航栏 -->
+			<div class="nav-wrap">
+				<nav>
+					<h3>Lumina の Blog</h3>
+					<ul class="vice-nav">
+						<li>
+							<span>首页</span>
+							<ul class="vice-nav-list"></ul>
+						</li>
+						<li>
+							<span>归档</span>
+							<ul class="vice-nav-list">
+								<li><a href="./page/music.html">音乐</a></li>
+								<li><a href="./page/アニメ.html">番剧</a></li>
+								<li><a href="./page/game-index.html">游戏</a></li>
+							</ul>
+						</li>
+						<li>
+							<span>留言板</span>
+							<ul class="vice-nav-list"></ul>
+						</li>
+						<li>
+							<span>时间轴</span>
+							<ul class="vice-nav-list"></ul>
+						</li>
+						<li>
+							<span>关于</span>
+							<ul class="vice-nav-list"></ul>
+						</li>
+					</ul>
+					<div class="search">
+						<form class="search" method="get">
+							<label for="search"></label>
+							<input type="text" name="search" id="search" placeholder="搜索....">
+							<span class="info-clear">x</span>
+							<div class="search-wrap">
+								<ul>
+									<li>1</li>
+									<li>1</li>
+									<li>1</li>
+								</ul>
+							</div>
+						</form>
+					</div>
+				</nav>
+			</div>
+			<!-- 导航栏 结束 -->
+
+			<!-- 头图 + 欢迎语 -->
+			<section class="firstview">
+				<figure>
+					<div class="banner-wrap">
+						<span>hey, friends</span>
+						<div class="ban-yiyan">人生碌碌, 竞短论长, 却不道荣枯有数, 得失难量.
+							<div class="ban-contactbg">
+								<div class="arrow_l">&lt;</div>
+								<div class="single">
+									<li>
+										<img title="电报" src="./source/img/index/tg.svg" width="25" height="25">
+										<a class="ci">Telegram</a>
+									</li>
+								</div>
+								|
+								<div class="single">
+									<li>
+										<img title="微信" src="./source/img/index/wechat.png" width="25" height="25">
+										<a class="ci">Wechat</a>
+									</li>
+								</div>
+								<div class="arrow_r">></div>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</figure>
+			</section>
+			<!-- 头图 + 欢迎语 结束 -->
+
+		</div>
+		<!-- 顶部: 包括头图和导航栏 结束-->
+
+		<!-- 中间: 内容 左 + 右 -->
+		<div id="page-center">
+			<div class="pagebg"></div>
+			<div class="page-wrap">
+				<!-- 左 -->
+				<div class="page-left">
+					<!-- 公告栏 -->
+					<div class="single-atc bulletin" id="bulletin">
+						<div class="circle"></div>
+						<ul>
+							<li>
+								<div class="fig"><img src="./source/img/index/firstview2.jpg"></div>
+								<div class="txt">
+									<div class="txt-wrap">
+										<h3>title</h3>
+										<span style="padding-bottom: 1em;">info</span>
+									</div>
+								</div>
+							</li>
+
+							<li>
+								<div class="fig"><img src="./source/img/index/firstview2.jpg"></div>
+								<div class="txt">
+									<div class="txt-wrap">
+										<h3>title</h3>
+										<span style="padding-bottom: 1em;">info</span>
+									</div>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+					<section class="bulletin-yiyan">
+						<div class="ban-yiyan" style="margin: 0 0 0 1.3rem;color: white;">
+							天地一逆旅, 同悲万古尘
+						</div>
+						<div class="ban-yiyan list" id="list">
+							<span>点击收起公告栏 </span>
+							<img src="./source/img/index/下拉.png" alt="">
+						</div>
+					</section>
+					<!-- 公告栏 结束 -->
+
+					<div class="article-wrap">
+
+						<article class="single-atc left">
+							<div class="fig">
+								<img src="./source/img/index/firstview2.jpg">
+							</div>
+							<div class="txt">
+								<span class="TS">发布于 </span>
+								<h3>title</h3>
+								<span>info</span>
+							</div>
+						</article>
+
+						<article class="single-atc left">
+							<div class="fig">
+								<img src="./source/img/index/firstview2.jpg">
+							</div>
+							<div class="txt">
+								<span class="TS">发布于 </span>
+								<h3>title</h3>
+								<span>info</span>
+							</div>
+						</article>
+
+						<article class="single-atc left">
+							<div class="fig">
+								<img src="./source/img/index/firstview2.jpg">
+							</div>
+							<div class="txt">
+								<span class="TS">发布于 </span>
+								<h3>title</h3>
+								<span>info</span>
+							</div>
+						</article>
+
+					</div>
+
+					<!-- 页码 -->
+					<div class="next-page"></div>
+					<!-- 页码 结束 -->
+
+				</div>
+				<!-- 左 结束 -->
+				<div class="page-grap"></div>
+				<!-- 右 -->
+				<div class="page-right">
+					<!-- 用户/自己 -->
+					<div class="single-atc right">
+
+
+						<div style="margin: 0 auto; display:flex; position: relative;">
+							<div class="header-mask">
+								<a href="javascript:;">设置</a>
+							</div>
+							<img id="client-header" width="100px" height="100px"
+								src="https://avatars.githubusercontent.com/u/53186053?s=400&u=21c16bc6c8fe8368cb69fc8396efcbe781eba1ca&v=4">
+						</div>
+
+						<table id="client" width="100%">
+							<caption id="defaultName">Lumina</caption>
+							<thead>
+								<th>文章</th>
+								<th>标签</th>
+								<th>分类</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- 用户/自己 结束 -->
+
+					<!-- 欢迎语 -->
+					<div class="single-atc right" style="padding: 1em;">
+						<p style="text-align: center;font-size: large;font-weight:800">ヾ(≧∇≦*)ゝ</p>
+						欢迎来到LuminaのBlog,希望玩的开心~~~~
+					</div>
+					<!-- 欢迎语 结束 -->
+
+					<!-- 时间 -->
+					<div class="single-atc right" style="padding: 1em;">
+						<p class="right-title">目标</p>
+						<span id="anti-time" class="timer"></span>
+					</div>
+					<!-- 时间 结束 -->
+
+					<!-- 随写 -->
+					<div id="notes" class="single-atc notes">
+						<p style="text-align: center;border-bottom:1px double;padding-bottom:1em;">随写录</p>
+						<!-- 标签区 -->
+						<div class="note-board">
+
+							<div class="single-note">
+								<span>info</span>
+								<div class="note-ts">
+									<span>time</span>
+									<span style="float: right;">by name</span>
+								</div>
+							</div>
+
+							<div class="single-note">
+								<span>info</span>
+								<div class="note-ts">
+									<span>time</span>
+									<span style="float: right;">by name</span>
+								</div>
+							</div>
+
+							<div class="single-note">
+								<span>info</span>
+								<div class="note-ts">
+									<span>time</span>
+									<span style="float: right;">by name</span>
+								</div>
+							</div>
+						</div>
+						<!-- 标签区 结束 -->
+
+						<!-- 输入区 -->
+						<div class="write">
+
+							<div id="write-btn">
+								<input class="write-btn" type="button" value="写">
+							</div>
+
+							<div class="write-area">
+								<form action="./php/index_note.php" method="post">
+									<p>
+										<label for="note-content"></label>
+										<textarea class="write-txt" name="note-content" cols="20" rows="5" style="resize: none;"></textarea>
+									</p>
+									<input class="submit" type="submit" value="发布">
+								</form>
+							</div>
+
+						</div>
+						<!-- 输入区 结束 -->
+					</div>
+					<!-- 随写 结束 -->
+				</div>
+				<!-- 右 结束 -->
+			</div>
+		</div>
+		<div class="clear"></div>
+		<!-- 中间: 内容 左+右 结束-->
+
+		<!-- 页脚: 就只有页脚,没啥 -->
+		<footer>
+			<p>©2202-2022 By Lumina</p>
+		</footer>
+		<!-- 页脚: 就只有页脚,没啥 结束 -->
+	</div>
+	<!-- 这是页面 结束 -->
+
+
+</body>
+
+</html>
